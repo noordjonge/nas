@@ -11,6 +11,7 @@ Dieses Skript verwandelt ein Ubuntu 22.04 System in ein kleines NAS (Network Att
 - [Konfiguration](#konfiguration)
 - [Beitrag](#beitrag)
 - [Lizenz](#lizenz)
+- [Haftungsausschluss](#haftungsausschluss)
 
 ## Über das Projekt
 
@@ -306,8 +307,12 @@ Dieses Projekt ist unter der MIT-Lizenz lizenziert. Weitere Informationen finden
     ```
     Das Skript gibt eine Abschlussmeldung aus, die den Benutzer darüber informiert, dass die Einrichtung abgeschlossen ist und die verschiedenen Dienste nun verfügbar sind.
 
+    
+**Diese README-Datei enthält alle wesentlichen Informationen, die Benutzer benötigen, um das Skript zu verstehen, zu installieren und zu verwenden. Sie bietet auch klare Anweisungen zur Installation und Konfiguration der verschiedenen Dienste sowie Informationen zur Sicherheit und Benutzerinteraktion. Der Haftungsausschluss stellt sicher, dass die Nutzer über die Risiken und die fehlende Gewährleistung informiert sind.**
 
-**Diese README-Datei enthält alle wesentlichen Informationen, die Benutzer benötigen, um das Skript zu verstehen, zu installieren und zu verwenden. Sie bietet auch klare Anweisungen zur Installation und Konfiguration der verschiedenen Dienste sowie Informationen zur Sicherheit und Benutzerinteraktion.**
+## Haftungsausschluss
+
+**Haftungsausschluss**: Dieses Skript wird ohne jegliche Gewährleistung bereitgestellt. Die Nutzung erfolgt auf eigene Gefahr. Der Autor übernimmt keine Verantwortung für Schäden oder Datenverluste, die durch die Nutzung dieses Skripts entstehen könnten. Es wird empfohlen, vor der Nutzung des Skripts eine vollständige Sicherung des Systems durchzuführen.
 
 ## Citations:
 [1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/19140425/78b43616-5650-4b90-ab6f-8701faff4248/nas.sh<br>
