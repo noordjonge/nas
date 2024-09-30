@@ -1,0 +1,8 @@
+# Ignore log files
+*.log
+
+# Ignore backup files
+*.bak
+
+# Ignore configuration files with sensitive information
+/etc/nas_setup.conf
