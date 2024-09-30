@@ -1,82 +1,66 @@
 # Linux Server Setup Script
 
-**Version:** 1.4  
+**Version:** 3.0 
 **Author:** Sebastian Palencsár
 
-## Overview
+# NAS Setup Script
 
-This script automates the setup of a Linux server by configuring SSH, installing and setting up Samba, and optionally installing Docker along with additional components like Vaultwarden, Jellyfin, Portainer, and Netdata.
+This script automates the setup of a Network Attached Storage (NAS) system on Ubuntu 22.04 and later versions.
 
 ## Features
 
-- **SSH Configuration:** Changes the default SSH port to 39000 and disables root login. A new user is created with sudo privileges.
-- **Samba Setup:** Installs and configures Samba. Optionally sets up Time Machine support.
-- **Docker Installation:** Installs Docker and Docker Compose if desired.
-- **Optional Components:** Installs Vaultwarden, Jellyfin, Portainer, and Netdata based on user preference.
-- **Security Enhancements:** Configures automatic updates and secures shared memory.
+- Configures SSH with custom port and user
+- Sets up Samba file sharing
+- Installs and configures Docker
+- Implements basic security measures (firewall, fail2ban)
+- Configures automatic system updates
+- Optionally installs additional components (Vaultwarden, Jellyfin, Portainer, Netdata)
 
 ## Requirements
 
-- **Operating System:** Designed for Ubuntu-based systems. Tested on Ubuntu 22.04 LTS.
-- **Permissions:** Root or sudo access is required to execute the script.
-
-## Installation
-
-### Step 1: Clone the Repository
-
-```shell
-git clone https://github.com/yourusername/linux-server-setup.git
-cd linux-server-setup
-```
-
-### Step 2: Review the Configuration
-
-Open config.sh to review and modify any configuration settings as needed.
-
-### Step 3: Run the Script
-
-Execute the setup script with root privileges:
-
-```shell
-sudo ./setup_script.sh
-```
-### Step 4: Follow On-Screen Prompts
-
-The script will guide you through various configuration options:
-
-- Configure SSH settings
-- Set up Samba with optional Time Machine support
-- Decide whether to install Docker
-- Choose additional components to install (Vaultwarden, Jellyfin, etc.)
+- Ubuntu 22.04 or later
+- Root or sudo access
+- Internet connection
 
 ## Usage
 
-Once installed, you can manage your server using the configured services. 
+1. Clone this repository:
+   ```
+   git clone https://github.com/yourusername/nas-setup-script.git
+   ```
 
-For example:
+2. Navigate to the script directory:
+   ```
+   cd nas-setup-script
+   ```
 
-- Access Jellyfin at http://yourserverip:8096
-- Manage Docker containers using Portainer at http://yourserverip:9000
+3. Make the script executable:
+   ```
+   chmod +x setup_script.sh
+   ```
+
+4. Run the script:
+   ```
+   sudo ./setup_script.sh
+   ```
+
+5. Follow the on-screen prompts to configure your NAS.
 
 ## Configuration
 
-The script can be customized by editing the config.sh file:
+You can modify the default settings in the `config.sh` file before running the script.
 
-- SSH Port: Change the default port from 39000 to another value if needed.
-- User Settings: Specify a different username for SSH and Samba access.
+## Contributing
 
-## Known Issues
-
-Ensure that all dependencies are installed before running the script.
-Check network configurations if services are not accessible externally.
-
-## Disclaimer
-
-This script is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the script or the use or other dealings in the script.
+Contributions are welcome! Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for details.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Disclaimer
+
+This script is provided "as is" without warranty of any kind. Use at your own risk.
 
 ## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request for any improvements or bug fixes.
