@@ -3,8 +3,6 @@
 **Version:** 3.0 
 **Author:** Sebastian Palencsár
 
-# NAS Setup Script
-
 This script automates the setup of a Network Attached Storage (NAS) system on Ubuntu 22.04 and later versions.
 
 ## Features
